@@ -55,6 +55,6 @@ def send_report_via_email(report):
         subject,
         message,
         settings.EMAIL_HOST_USER,
-        ['vkorat50@gmail.com'],
+        ['tech@themedius.ai'],
         fail_silently=False,
     )
