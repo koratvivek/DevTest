@@ -1,0 +1,15 @@
+{% extends 'fileupload/base.html' %}
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2 class="text-center">File Uploaded Successfully!</h2>
+      <p class="text-center">Here is the summary report of the uploaded data:</p>
+      <ul class="list-group">
+        <li class="list-group-item">Total Records: {{ report.total_records }}</li>
+        <li class="list-group-item">Total DPD: {{ report.dpd_sum }}</li>
+        <li class="list-group-item">Average DPD: {{ report.dpd_avg }}</li>
+        <li class="list-group-item">Maximum DPD: {{ report.dpd_max }}</li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
